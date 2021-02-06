@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+<header>
+
+    <div id="logo"><img src="logo.svg" alt="Hanger the closet"></div>
+
+</header>
+
+<main>
+
+<ul class="breadcrumbs">
+
+    <li><a href="">Home</a></li>
+    <li><a href="brands.html">Brands</a></li>
+    <li class="brand"><a href="brand.html"></a></li>
+    <li class="productname"><a href="product.html"></a></li>
+
+</ul>
+
+<div class="wrapper">  
+
+   <div class="image"><img class="productImage" src="" alt=""></div>
+
+    <div class="description">
+        <div id="brandname"></div>
+        <div id="title"></div>
+        <div id="price"><span></span> DKK</div>
+        <div id="info">
+            <form>
+                <label>
+                Choose a size
+                <select name="size">
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </label><br>
+            <button>Add to basket</button>
+          </form>
+        </div>
+    </div>
+
+    <div class="productinfo">
+        <h1>Product information</h1>
+        <h2>Model name</h2>
+        <p id="title2"></p>
+        <h2>Color</h2>
+        <p id="color"></p>
+        <h2>Inventory number</h2>
+        <p id="number"></p>
+    </div>  
+
+    <div class="extrainfo">
+
+        <div class="moreinfo">
+            <p>More info</p>
+            <img id="arrow" class="arrowdown">
+        </div>
+    
+        <div class="container">
+            <div class="details closed">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer>
+    <a href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset" target="_blank"><p>Source of data</p></a>
+</footer>
+
+<script src="javascript.js"></script>
+
+</body>
+</html>

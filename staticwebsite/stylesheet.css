@@ -1,0 +1,382 @@
+@font-face {
+    font-family: Helvetica;
+    src: url("/staticwebsite/fonts/Helvetica.ttf");
+}
+
+#logo img {
+    width: 15vw;
+}
+
+#logo {
+    text-align: center;
+    margin-top: 1.5vw;
+}
+
+#alphabet a {
+    font-family: Helvetica;
+    color: black;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+#alphabet a:hover {
+    opacity: 80%;
+}
+
+#alphabet {
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+
+.brandlist ol {
+    list-style: none;
+    display: flex;
+}
+
+.brandlist li {
+    padding: 1vw 1vw 1vw 1vw;
+    background-color: gainsboro;
+    margin-right: 1vw;
+}
+
+.brandlist li:hover {
+    background-color: whitesmoke;
+}
+
+.brandlist {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1vw;
+    margin-left: 3vw;
+}
+
+.letters {
+    margin-bottom: 3vw;
+}
+
+.letters h2 {
+    font-family: Helvetica;
+    font-size: 2vw;
+    margin-left: 3vw;
+}
+
+.letters a {
+    text-decoration: none;
+    font-family: Helvetica;
+    color: black;
+}
+
+.brand h1 {
+    font-family: Helvetica;
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+
+.photos img {
+    width: 20vw;
+    height: auto;
+    margin-bottom: 7vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    border: 1px gray solid;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5vw;
+}
+
+.photos img:hover {
+    opacity: 80%;
+}
+
+.photos article.soldOut img {
+    opacity: 0.5;
+  }
+
+.photos article.soldOut::before {
+    content: "Sold out";
+    position: absolute;
+    background: #707070;
+    color: white;
+    padding: 1rem;
+    margin-left: 5vw;
+    font-family: Helvetica;
+}
+
+.photos article.onSale::before {
+    content: "SALE";
+    position: absolute;
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    margin-left: 5vw;
+    font-family: Helvetica;
+}
+
+.ceny p.onSale #price1 {
+    text-decoration: line-through;
+}
+
+.ceny p.onSale #price2 {
+    color: red;
+}
+
+.opisy {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30vw;
+    justify-content: left;
+    margin-top: -42vw;
+    margin-left: 5vw;
+}
+
+.opisy p {
+    width: 20vw;
+    height: auto;
+    font-family: Helvetica;
+    color: black;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.opisy p:hover {
+    opacity: 80%;
+}
+
+.opisy a {
+    text-decoration: none;
+}
+
+.ceny {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30vw;
+    justify-content: left;
+    margin-top: -35.5vw;
+    margin-left: 5vw;
+}
+
+.ceny p {
+    width: 20vw;
+    height: auto;
+    font-family: Helvetica;
+    color: #707070;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+ul.breadcrumbs {
+    list-style: none;
+    margin-top: 4vw;
+    margin-left: 2vw;
+}
+
+ul.breadcrumbs li+li:before {
+    padding: 1vw;
+    content: "/\00a0";
+}
+
+ul.breadcrumbs li {
+    font-family: Helvetica;
+    display: inline;
+    font-size: 1.2vw;
+  }
+
+ul.breadcrumbs li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul.breadcrumbs li a:hover {
+    opacity: 80%;
+    text-decoration: underline;
+}
+
+.image img {
+    height: 50vw;
+    border: 1px gray solid;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+
+#brandname {
+    font-family: Helvetica;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    font-size: 1.7vw;
+    font-weight: 700;
+}
+
+.description #title {
+    font-family: Helvetica;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+
+#price {
+    font-family: Helvetica;
+    font-size: 1.5vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+}
+
+#info {
+    font-family: Helvetica;
+    margin-top: 2vw;
+}
+
+#info p {
+    font-size: 3vw;
+}
+
+button {
+    margin-top: 2vw;
+    margin-left: 1vw;
+    width: 29vw;
+    height: 3.5vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    background-color: black;
+    color: white;
+    font-family: Helvetica;
+}
+
+label {
+    margin-left: 1vw;
+    font-size: 1.3vw;
+    border: 1px black solid;
+    padding: 1vw 13vw 1vw 1vw;
+    width: 30vw;
+}
+
+select {
+    margin-left: 1vw;
+    width: 5vw;
+    height: 2vw;
+    font-size: 1.5vw;
+}
+
+.description {
+    justify-self: center;
+    height: 20vw;
+    width: 30vw;
+    padding: 1vw 1vw 1vw 1vw;
+    margin-top: 3vw;
+}
+
+.productinfo {
+    margin-left: 10vw;
+    font-family: Helvetica;
+    background-color: lightgray;
+    width: 28vw;
+    height: 25vw;
+    padding-left: 2vw;
+    padding-right: 1vw;
+    padding-top: 1vw;
+
+}
+
+.productinfo h1 {
+    font-size: 2vw;
+}
+
+.productinfo h2 {
+    margin-top: 3vw;
+    font-size: 1.5vw;
+}
+
+.productinfo p {
+    margin-top: -1vw;
+    font-size: 1.2vw;
+}
+
+.moreinfo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vw;
+    margin-right: 8vw;
+}
+
+.moreinfo p {
+    font-family: Helvetica;
+    font-size: 2vw;
+}
+
+.details {
+    font-size: 1.2vw;
+    line-height: 1.5;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 8vw;;
+    font-family: Helvetica;
+}
+
+#arrow {
+    position: relative;
+    top: 2.8vw;
+    left: 1vw;
+    width: 2vw;
+    height: 1.5vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.arrowdown {
+    background-image: url(images/arrowdown.png);
+}
+
+.arrowup {
+    background-image: url(images/arrowup.png);
+}
+
+.container {
+    overflow: hidden;
+    height: 15vw;
+}
+
+.details {
+	overflow-y: scroll;
+    height:100%;
+
+	-webkit-transition:-webkit-transform .3s ease;
+       -moz-transition:   -moz-transform .3s ease;
+        -ms-transition:    -ms-transform .3s ease;
+            transition:        transform .3s ease;
+}
+
+.details.opened { 
+    /* visible */
+    -webkit-transform: translate(0, 0%);
+       -moz-transform: translate(0, 0%);
+        -ms-transform: translate(0, 0%);
+            transform: translate(0, 0%);
+}
+.details.closed { 
+    /* completely offscreen */
+    -webkit-transform: translate(0, -100%);
+       -moz-transform: translate(0, -100%);
+        -ms-transform: translate(0, -100%);
+            transform: translate(0, -100%);
+}
+
+
+footer p {
+    font-family: Helvetica;
+    font-size: 1vw;
+    color: black;
+}
+
+footer {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.5vw;
+}

@@ -1,0 +1,28 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 29vw 29vw;
+    grid-template-areas: "image description"
+                        "image productinfo"
+                        "extra extra";
+}
+
+.image {
+    grid-area: image;
+}
+
+.description {
+    grid-area: description;
+}
+
+.productinfo {
+    grid-area: productinfo;
+}
+
+.extrainfo {
+    grid-area: extra;
+}
+
+.brandinfo {
+    grid-area: brand;
+}
